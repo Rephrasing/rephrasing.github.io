@@ -1,1 +1,1 @@
-The homepage of rephrasing's projects
+Rephrasing's Github Pages Website

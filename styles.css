@@ -38,9 +38,13 @@
   
   section h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    left: 50px;
+    margin-bottom: 10px;
+    left: 40px;
     color: #820589;
+  }
+
+  section ul {
+    padding: 0;
   }
   
   /* Projects Cards */
@@ -48,13 +52,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
   }
   
   .card {
     background: #820589;
-    width: 250px;
-    height: 160px;
+    width: 300px;
+    height: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +81,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .card p {
+    text-decoration: none;
+    color:#FFFDD0;
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+    word-wrap:break-word;
+    max-width: 250px;
   }
   
   .card i {
@@ -131,4 +145,26 @@
     color: white;
     font-size: 0.9rem;
   }
-  
+
+/* loading icon */
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #820589; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-text {
+  margin-left: 10px;
+  vertical-align: middle;
+}

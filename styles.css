@@ -1,0 +1,134 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: #FFFDD0;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: #820589;
+    color: #FFFDD0;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Section Titles */
+  section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    left: 50px;
+    color: #820589;
+  }
+  
+  /* Projects Cards */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #820589;
+    width: 250px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #FFFDD0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #FFFDD0;
+    transition: color 0.3s;
+  }
+  
+  .card a:hover i,
+  .card a:hover span {
+    color: #f2eea3;
+  }
+
+  
+  /* Contact Section */
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links a {
+    text-decoration: none;
+    color: #820589;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #820589;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .contact-links a:hover {
+    background: #5c0460;
+    color: #FFFDD0;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
